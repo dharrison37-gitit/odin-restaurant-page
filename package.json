@@ -1,0 +1,30 @@
+{
+  "name": "odin-restaurant-page",
+  "version": "1.0.0",
+  "description": "Restaurant page project from The Odin Project.",
+  "keywords": [
+    "TOP",
+    "JS",
+    "CSS",
+    "HTML"
+  ],
+  "homepage": "https://github.com/dharrison37-gitit/odin-restaurant-page#readme",
+  "bugs": {
+    "url": "https://github.com/dharrison37-gitit/odin-restaurant-page/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dharrison37-gitit/odin-restaurant-page.git"
+  },
+  "license": "ISC",
+  "author": "D. Harrison",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "webpack": "^5.110.3",
+    "webpack-cli": "^7.2.3"
+  }
+}
