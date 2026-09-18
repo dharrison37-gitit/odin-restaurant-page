@@ -134,6 +134,7 @@ button {
     }
 
     img {
+        max-width: 100%;
         border: 7px solid rgb(60 80 40 / 1);
     }
 }
