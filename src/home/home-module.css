@@ -1,24 +1,24 @@
 .home {
-    background-color: rgb(69 76 67 / 1);
-
-    h1 {
-        background-color: rgb(67 70 56 / 1);
-        padding: 20px;
-        border: 7px solid rgb(37 50 45 / 1);
-        border-radius: 20px;
-        corner-shape: notch notch bevel bevel;
-    }
-
     .info {
         background-color: rgb(67 70 56 / 1);
         padding: 50px;
-        margin: 50px;
+        margin: 50px auto;
         border: 7px solid rgb(37 50 45 / 1);
         font-size: 1.2rem;
     }
 
+    .hours {
+        font-size: 2rem;
+        text-shadow: 1px 1px 20px limegreen;
+    }
+
+    .info:last-child {
+        border-radius: 20px;
+        corner-shape: square square bevel bevel;
+    }
+
     .mainImg {
-        height: 300px;
+        max-width: 100%;
         border: 7px solid rgb(37 50 45 / 1);
     }
 }

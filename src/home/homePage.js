@@ -9,7 +9,7 @@ export default function homePage() {
     homeDiv.appendChild(header);
 
     const hours = document.createElement("div");
-    hours.classList.add("info");
+    hours.classList.add("info", "hours");
     hours.textContent = "Open 24 hours a day";
     homeDiv.appendChild(hours);
 

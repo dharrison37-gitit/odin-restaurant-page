@@ -28,8 +28,18 @@ body {
 
 .container {
     width: 80vw;
+    height: 100vh;
     text-align: center;
     margin: 0 auto;
+}
+
+h1,
+h2 {
+    background-color: rgb(67 70 56 / 1);
+    padding: 20px;
+    border: 7px solid rgb(37 50 45 / 1);
+    border-radius: 20px;
+    corner-shape: notch notch square square;
 }
 
 button {
@@ -45,27 +55,27 @@ button {
 .home,
 .menu,
 .about {
+    background-color: rgb(69 76 67 / 1);
     width: 50vw;
-    height: 100vh;
     padding: 50px;
     margin: 0 auto;
     border-radius: 30px;
     corner-shape: notch notch bevel bevel;
 }
 
-#home,
-#menu,
-#about {
+.btn-home,
+.btn-menu,
+.btn-about {
     background-color: rgb(69 76 67 / 0.5);
     color: gold;
 }
 
-#home:hover,
-#menu:hover,
-#about:hover {
+.btn-home:hover,
+.btn-menu:hover,
+.btn-about:hover {
     background-color: rgb(69 76 67 / 1);
 }
 
 .active {
-    background-color: rgb(69 76 67 / 1);
+    background-color: rgb(69 76 67 / 1) !important;
 }
