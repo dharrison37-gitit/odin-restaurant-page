@@ -22,21 +22,21 @@ export default function menuPage() {
     const items = [
         new FoodItem(
             "https://placehold.co/700x200",
-            "Item 1",
-            "Description 1",
-            "Price 1",
+            "Creme filled Waffles",
+            "Vanilla creme filled buttermilk waffles, layered with whipped creme and your choice of drizzle.",
+            "3.99",
         ),
         new FoodItem(
             "https://placehold.co/700x200",
-            "Item 2",
-            "Description 2",
-            "Price 2",
+            "Double Stack Waffles",
+            "Like the original, but doubled up on everything including your choice of topping.",
+            "7.50",
         ),
         new FoodItem(
             "https://placehold.co/700x200",
-            "Item 3",
-            "Description 3",
-            "Price 3",
+            "Waffles n Chicken",
+            "For the protein seeking, this one leaves out the sweetness and adds the chicken.",
+            "10.00",
         ),
     ];
 
@@ -52,13 +52,16 @@ export default function menuPage() {
         itemImg.alt = "Food Item Image";
 
         const itemName = document.createElement("p");
+        itemName.classList.add("item-name");
         itemName.textContent = item.itemName;
 
         const itemDescription = document.createElement("p");
+        itemDescription.classList.add("item-description");
         itemDescription.textContent = item.itemDescription;
 
         const itemPrice = document.createElement("p");
-        itemPrice.textContent = `${item.itemPrice}`;
+        itemPrice.classList.add("item-price");
+        itemPrice.textContent = `$${item.itemPrice}`;
 
         itemContainer.appendChild(itemImg);
         itemContainer.appendChild(itemName);
@@ -67,6 +70,7 @@ export default function menuPage() {
 
         gridContainer.appendChild(itemContainer);
     });
+
     menuDiv.appendChild(gridContainer);
 
     return menuDiv;
